@@ -1,4 +1,4 @@
-# M80 Java Project
+# Java Codes 2
 
 ## Project Structure
 
