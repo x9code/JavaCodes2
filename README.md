@@ -25,4 +25,4 @@
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/USERNAME/REPO_NAME.git
+   git clone https://github.com/x9code/JavaCodes2.git
