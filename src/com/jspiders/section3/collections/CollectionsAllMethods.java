@@ -7,11 +7,11 @@ public class CollectionsAllMethods {
         List<Integer> numbers = new ArrayList<>(Arrays.asList(5, 2, 9, 1, 5));
 
         // 1️⃣ Sorting & Ordering
-        Collections.sort(numbers);                           // [1, 2, 5, 5, 9]
+        Collections.sort(numbers);                             // [1, 2, 5, 5, 9]
         Collections.sort(numbers, Collections.reverseOrder()); // [9, 5, 5, 2, 1]
-        Collections.reverse(numbers);                        // [1, 2, 5, 5, 9]
-        Collections.shuffle(numbers);                        // Random shuffle
-        Collections.swap(numbers, 0, 4);                     // Swap first & last
+        Collections.reverse(numbers);                          // [1, 2, 5, 5, 9]
+        Collections.shuffle(numbers);                          // Random shuffle
+        Collections.swap(numbers, 0, 4);                 // Swap first & last
 
         // 2️⃣ Searching & Min/Max
         int max = Collections.max(numbers);                  // Maximum

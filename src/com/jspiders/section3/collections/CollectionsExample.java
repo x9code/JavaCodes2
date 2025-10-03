@@ -16,7 +16,7 @@ public class CollectionsExample {
         System.out.println(numbers);
 
         int max = Collections.max(numbers); // max element
-        System.out.println("Max: " + max);
+        System.out.println(STR."Max: \{max}");
     }
 }
 

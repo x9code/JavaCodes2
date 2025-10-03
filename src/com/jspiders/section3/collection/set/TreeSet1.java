@@ -12,7 +12,7 @@ public class TreeSet1 {
         s1.add("E");
         s1.add("B");
         /*
-        1. s1.add(null); JVM throws NullPointerException
+        1. s1.add(null); JVM throws NullPointerException(no null values are allowed)
         2. Duplicates are not allowed
         3. There is no index
         4. Binary Search tree is the underlying Data structure
@@ -24,7 +24,7 @@ public class TreeSet1 {
         10. add operation is slow
         */
          String s = "B";
-        String v = "A";
+         String v = "A";
         System.out.println(s.compareTo(v));
 
         for (String ser : s1){

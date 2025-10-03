@@ -1,10 +1,14 @@
 package com.jspiders.section3.object;
 
-import com.jspiders.section3.exceptionclasses.ThrowKeyword;
-
 public class Access {
     public static void main(String[] args) {
 
-        ThrowKeyword.test(6,1);
+        Object obj1 = new Object();
+        Object obj2 = new Object();
+        System.out.println(obj1.hashCode());
+        System.out.println(obj1.toString());
+        System.out.println(obj1.equals(obj2));
+
+
     }
 }
