@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Hashtable;
 
 public class HashTableAndHashMap {
-    public static void main(String[] args) {
+    static void main() {
         Hashtable<Integer,String> ht = new Hashtable<>();
         ht.put(1,"A");
         ht.put(2,"D");
@@ -21,6 +21,6 @@ public class HashTableAndHashMap {
         hm.put(3,"B");
         hm.put(4,"E");
         hm.put(5,"D");
-        System.out.println("hashMAP - >"+hm);
+        System.out.println("hashMap - >"+hm);
     }
 }
