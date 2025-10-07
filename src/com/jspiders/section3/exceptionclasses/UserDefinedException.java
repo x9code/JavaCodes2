@@ -1,4 +1,7 @@
 package com.jspiders.section3.exceptionclasses;
+
+
+
 class IllegalAge extends Exception{
     IllegalAge(String message){
         super(message);
@@ -18,7 +21,7 @@ public class UserDefinedException {
         try{
             checkAge(age);
         } catch (IllegalAge e) {
-            throw new RuntimeException(e);
+            e.getMessage();
         }
     }
 
