@@ -4,7 +4,7 @@ class IllegalAge extends Exception{
         super(message);
     }
 }
-public class Test {
+public class UserDefinedException {
     static void checkAge(int age) throws IllegalAge{
         if(age < 18){
             System.out.println("Age must be greater than 18");
