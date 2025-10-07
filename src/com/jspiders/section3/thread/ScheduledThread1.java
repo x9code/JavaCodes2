@@ -4,17 +4,17 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
 
-public class ScheduledThread {
+public class ScheduledThread1 {
     static void main() {
         System.out.println("main starts....");
         int thread = Runtime.getRuntime().availableProcessors();
-        //System.out.println("no of threads: "+thread);
         ScheduledExecutorService es1 = Executors.newScheduledThreadPool(thread);
         Runnable task1 = ()->{
             System.out.println("running task1");
         };
-        es1.scheduleAtFixedRate(task1,0,5, TimeUnit.SECONDS);
-        es1.scheduleWithFixedDelay(task1,0,3,TimeUnit.SECONDS);
+        for(int i =1;i<=2;i++){
+            es1.submit(task1);
+        }
         es1.shutdown();
 
         System.out.println("main ends....");
