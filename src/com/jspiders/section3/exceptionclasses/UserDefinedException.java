@@ -1,11 +1,11 @@
 package com.jspiders.section3.exceptionclasses;
 
-
+import java.util.Scanner;
 
 class IllegalAge extends Exception{
-    IllegalAge(String message){
-        super(message);
-    }
+//    IllegalAge(String message){
+//        super(message);
+//    }
 }
 public class UserDefinedException {
     static void checkAge(int age) throws IllegalAge{
@@ -17,11 +17,13 @@ public class UserDefinedException {
     }
 
     static void main() {
-        int age = 12;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter your age :");
+        int age = sc.nextInt();
         try{
             checkAge(age);
         } catch (IllegalAge e) {
-            e.getMessage();
+            //e.getMessage();
         }
     }
 

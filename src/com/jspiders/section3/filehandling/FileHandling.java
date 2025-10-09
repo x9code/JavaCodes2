@@ -39,24 +39,11 @@ public class FileHandling {
         System.out.println(fileName+" is deleted");
     }
 
-    static void main() {
-
-        createFolder();//create a folder
-        try {
+    static void main() throws IOException {
+            createFolder();//create a folder
             createFile("surprise-mf.txt");//create a file inside the folder
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        try{
             writeToFile("surprise-mf.txt","one of the most interesting thing about java is that it will feed your family for the next 30 years");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        try{
             readTheFile("surprise-mf.txt");
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        deleteFile("surprise-mf.pdf");
+            deleteFile("surprise-mf.pdf");
     }
 }
