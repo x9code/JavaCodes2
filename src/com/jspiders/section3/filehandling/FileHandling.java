@@ -45,5 +45,6 @@ public class FileHandling {
             writeToFile("surprise-mf.txt","one of the most interesting thing about java is that it will feed your family for the next 30 years");
             readTheFile("surprise-mf.txt");
             deleteFile("surprise-mf.pdf");
+            System.out.println("operation complete.....");
     }
 }
