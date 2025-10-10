@@ -1,6 +1,9 @@
 package com.jspiders.staticblocks;
 
 class Class1{
+    Class1(){
+        System.out.println("constructor of class1 is executed");
+    }
     static int h = 6;
     static {
         System.out.println("static block 1 executed");
