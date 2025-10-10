@@ -2,7 +2,7 @@ package com.jspiders.section3.thread;
 
 class MyThread extends Thread {
     public void run() {
-        System.out.println("Running: " + Thread.currentThread().getName());
+        System.out.println("Running in : " + Thread.currentThread().getName());
     }
 }
 
