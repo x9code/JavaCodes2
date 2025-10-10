@@ -13,9 +13,9 @@ class MainClass{
     }
 }
 if a class has static members(blocks/variables/methods), when we call a variable from Main Class containing the main method, here is what will happen :-
-	1. first the static main method will loaded to static area by jvm.
-	2. then the any method(print()) in main method will be put into stack area.
-	3. inside there will be StaticBlocks class which is not loaded , so it will be loaded into memory.
+	1. first the static main method will be loaded to static area by JVM.
+	2. then any method(print()) in main method will be put into stack area.
+	3. inside there will be StaticBlocks class which is not loaded , so it will be loaded into memory by the JVM.
 	4. all the static members of StaticBlock will be loaded to Static area.
 	5. After that the static blocks in the StaticBlock will be executed from top to bottom order(if it has multiple static blocks).
 	6. then the number will be shown
