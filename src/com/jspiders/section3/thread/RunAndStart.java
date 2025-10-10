@@ -5,9 +5,6 @@ class MyThread extends Thread {
         System.out.println("Running in : " + Thread.currentThread().getName()+" Thread");
     }
 }
-deepak
-
-
 public class RunAndStart {
     public static void main(String[] args) {
         MyThread t1 = new MyThread();
