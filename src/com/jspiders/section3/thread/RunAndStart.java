@@ -7,7 +7,7 @@ class MyThread1 extends Thread {
 }
 class MyThread2 implements Runnable{
     public void run(){
-        System.out.println("Running in :"+Thread.currentThread().getName()+" Thread");
+        System.out.println("Running in : "+Thread.currentThread().getName()+" Thread");
     }
 }
 public class RunAndStart {
