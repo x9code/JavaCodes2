@@ -6,7 +6,7 @@ interface Run1{
 interface Run2{
     public void count();
 }
-class Demo implements Run1, Run2{
+class Hebbal implements Run1, Run2{
     @Override
     public void view(){
         System.out.println("overriding view() of Run1");
@@ -18,7 +18,7 @@ class Demo implements Run1, Run2{
 }
 class Interface2{
     public static void main(String[] args) {
-        Demo d1 = new Demo();
+        Hebbal d1 = new Hebbal();
         d1.view();
         d1.count();
     }
