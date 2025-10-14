@@ -9,7 +9,7 @@ class Samsung extends AndroidOS{
     @Override
     public void showHome(){
         System.out.println("show 210 app icons");
-        
+
     }
 }
 class Oppo extends AndroidOS{
