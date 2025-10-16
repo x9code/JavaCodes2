@@ -1,7 +1,7 @@
 package com.jspiders.section3.exceptionclasses;
 
 public class ThrowKeyword {
-    public static void test(int a, int b) throws IllegalArgumentException{
+    public static void test(int a, int b) { //throws IllegalArgumentException{
         if(b==0) {
             throw new IllegalArgumentException("Invalid input : " + b);
         }
