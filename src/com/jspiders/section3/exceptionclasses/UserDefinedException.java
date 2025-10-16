@@ -25,6 +25,13 @@ public class UserDefinedException {
         } catch (IllegalAge e) {
             System.out.println(e.getMessage());
         }
+          /*checkAge(age); - this can be also written without try-catch block with throws keyword.
+          By writing in this way the  exception will propagate to default exception handler by the JVM.
+          And the JVM will print :-
+                        1. Name of the exception(i.e.IllegalAge)
+                        2. Reason for the exception
+                        3. full stack trace of all the methods involved
+         */
     }
 
 }
