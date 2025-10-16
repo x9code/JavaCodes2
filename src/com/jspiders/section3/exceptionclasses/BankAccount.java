@@ -17,7 +17,7 @@ public class BankAccount {
         }
     }
 
-    static void main() {
+    public static void main(String[] args) {
       double balance = 3000;
         System.out.println("Enter the amount :");
         Scanner sc = new Scanner(System.in);
