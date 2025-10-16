@@ -14,7 +14,6 @@ public class Marks {
             System.out.println("Valid marks: " + marks);
         }
     }
-
     public static void main(String[] args) {
         checkMarks(160); // No try-catch, no compiler error
 //        try{
