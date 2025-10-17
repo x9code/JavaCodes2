@@ -11,7 +11,7 @@ public class HashTableAndHashMap {
         ht.put(3,"B");
         ht.put(4,"E");
         ht.put(5,"C");
-        System.out.println("hashtable - >"+ht);
+        System.out.println("hashtable - > "+ht);
 
         System.out.println("-------------------------------------");
 
@@ -21,6 +21,6 @@ public class HashTableAndHashMap {
         hm.put(3,"B");
         hm.put(4,"E");
         hm.put(5,"D");
-        System.out.println("hashMap - >"+hm);
+        System.out.println("hashMap - > "+hm);
     }
 }
