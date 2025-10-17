@@ -23,9 +23,9 @@ public class TreeSet1 {
         9. search operation is FAST
         10. add operation is slow
         */
-         String s = "B";
-         String v = "A";
-        System.out.println(s.compareTo(v));
+         String s = "A";
+         String v = "B";
+        System.out.println("String s = \"A\";\n" + "String v = \"B\";\ns.compareTo(v) :"+s.compareTo(v));
 
         for (String ser : s1){
             System.out.println(ser);
