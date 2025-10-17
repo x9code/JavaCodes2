@@ -15,7 +15,7 @@ class Demo extends Thread
 
 }
 
-class Sample extends Object implements Runnable
+class Sample implements Runnable
 {
     @Override
     public void run() {
