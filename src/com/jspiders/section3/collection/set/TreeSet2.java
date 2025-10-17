@@ -8,8 +8,8 @@ class DescOrder implements Comparator<String>{
 
     @Override
     public int compare(String s1, String s2) {
-        int v = s2.compareTo(s1);
-        return v;
+        return  s2.compareTo(s1);
+
     }
 }
 
