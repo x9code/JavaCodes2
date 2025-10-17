@@ -4,7 +4,7 @@ import java.io.File;
 
 public class CreateFolder {
     static void main() {
-        File f1 = new File("D:\\folder1");
+        File f1 = new File("D:\\Demo-folder");
         f1.mkdir();
         System.out.println("Folder is created");
     }
