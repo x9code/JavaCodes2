@@ -17,10 +17,10 @@ public class ReadTheFile {
         System.out.println("reading the file 1");
         System.out.println("----------------------------");
         File f2 = new File("D:\\Demo-folder\\sample2.txt");
-        int size1 = (int)f1.length();
+        int size1 = (int)f2.length();
         FileReader fr2 = new FileReader(f2);
         char[] data1 = new char[size1];
-        fr2.read(data);
+        fr2.read(data1);
         String s1 = String.valueOf(data1);
         System.out.println(s1);
         System.out.println("reading the file 2");
