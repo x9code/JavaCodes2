@@ -82,8 +82,7 @@ class DriverManager{
 class Main{
     public static void main(String[] args) {
         DriverManager d=new DriverManager();
-        Database d1=null;
-        d1=DriverManager.getObject("Mysql");
+        Database d1 = DriverManager.getObject("Mysql");
         d1.create();
         d1.read();
 
