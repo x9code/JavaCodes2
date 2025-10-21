@@ -13,7 +13,7 @@ public class RunnableExample {
         Thread t1 = new Thread(new Task());
         Thread t2 = new Thread(new Task());
         t1.start();
-        t2.start();
+        t2.start();//thread starts
     }
 }
 
