@@ -1,0 +1,73 @@
+UP-CASTED REFERENCE :
+
+When you upcast (assign a subclass object to a superclass reference),
+the reference type determines what members you can access — only those defined in the superclass.
+
+EXAMPLE 1 :
+class Parent {
+    void show() { System.out.println("Parent show"); }
+}
+
+class Child extends Parent {
+    void display() { System.out.println("Child display"); }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Parent p = new Child();  // upcasting
+        p.show();                // valid
+        p.display();             // invalid — compile-time error
+    }
+}
+
+Reason:
+At compile time, the compiler checks methods and fields based on the reference type (Parent).
+At runtime, actual object (Child) decides which overridden version runs (if any).
+
+At compile time, Java checks method calls using the reference type (the left-hand side of the assignment).
+At runtime, Java executes the method based on the actual object type (the right-hand side — the real instance in memory).
+
+This mechanism is runtime polymorphism or dynamic method dispatch.
+
+EXAMPLE 2 :
+class Parent {
+    void show() {
+        System.out.println("Parent show()");
+    }
+}
+
+class Child extends Parent {
+    @Override
+    void show() {
+        System.out.println("Child show()");
+    }
+}
+
+public class Test {
+    public static void main(String[] args) {
+        Parent p = new Child();  // Upcasting
+        p.show(); //output : Child show()
+    }
+}
+
+1. Compilation phase:
+
+  -The compiler looks at the type of reference p, which is Parent.
+
+  -It checks: Does the Parent class have a show() method?
+
+  -Yes → valid call. So the code compiles successfully.
+
+2. Runtime phase:
+
+  -The object stored in p is actually a Child instance (new Child()).
+
+  -When the JVM executes p.show(), it looks at the object’s actual type, not the reference type.
+
+  -Since the actual object is of type Child, the show() method of Child executes.
+
+Key Principle
+
+ * Compile-time: method existence is checked using reference type.
+
+ * Runtime: method implementation is chosen using object type.
