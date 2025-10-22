@@ -21,8 +21,8 @@ public class Test {
 }
 
 Reason:
-At compile time, the compiler checks methods and fields based on the reference type (Parent).
-At runtime, actual object (Child) decides which overridden version runs (if any).
+ * At compile time, the compiler checks methods and fields based on the reference type (Parent).
+ * At runtime, actual object (Child) decides which overridden version runs (if any).
 
 At compile time, Java checks method calls using the reference type (the left-hand side of the assignment).
 At runtime, Java executes the method based on the actual object type (the right-hand side — the real instance in memory).
