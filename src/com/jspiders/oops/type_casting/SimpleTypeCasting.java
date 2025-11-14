@@ -5,7 +5,7 @@ class Demo6 {
 
     static{
         count = 100;
-        System.out.println("Static block executed"+count);
+        System.out.println("Static block executed "+count);
     }
 
     Demo6() {
